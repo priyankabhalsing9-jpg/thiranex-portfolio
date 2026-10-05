@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,21 +27,32 @@
 
     <header>
 
-        <nav aria-label="Main navigation">
+        <nav class="navbar container" aria-label="Main navigation">
 
             <a href="index.html" aria-label="Go to Home page">
                 Priyanka Bhalsing
             </a>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
                 <li>
                     <a href="projects.html" aria-current="page">
                         Projects
                     </a>
                 </li>
-                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
             </ul>
 
         </nav>
@@ -49,7 +61,7 @@
 
     <main id="main-content">
 
-        <section aria-labelledby="projects-heading">
+        <section aria-labelledby="projects-heading" class="container">
 
             <h1 id="projects-heading">My Projects</h1>
 
@@ -60,46 +72,50 @@
 
         </section>
 
-        <section aria-labelledby="project-list-heading">
+        <section aria-labelledby="project-list-heading" class="container">
 
             <h2 id="project-list-heading">Featured Projects</h2>
 
-            <article>
+            <div class="projects-grid">
 
-                <h3>Daily Expense Tracker</h3>
+                <article>
 
-                <p>
-                    A Java-based application for recording and managing
-                    daily expenses. The project helped me practice
-                    Java programming and GUI development.
-                </p>
+                    <h3>Daily Expense Tracker</h3>
 
-            </article>
+                    <p>
+                        A Java-based application for recording and managing
+                        daily expenses. The project helped me practice
+                        Java programming and GUI development.
+                    </p>
 
-            <article>
+                </article>
 
-                <h3>InternAI</h3>
+                <article>
 
-                <p>
-                    An AI-based smart allocation prototype designed to
-                    match candidates with suitable internship
-                    opportunities using skills, eligibility and
-                    opportunity information.
-                </p>
+                    <h3>InternAI</h3>
 
-            </article>
+                    <p>
+                        An AI-based smart allocation prototype designed to
+                        match candidates with suitable internship
+                        opportunities using skills, eligibility and
+                        opportunity information.
+                    </p>
 
-            <article>
+                </article>
 
-                <h3>Personal Portfolio Website</h3>
+                <article>
 
-                <p>
-                    A multi-page personal portfolio website built using
-                    semantic HTML5 and CSS with a focus on accessibility,
-                    SEO and keyboard navigation.
-                </p>
+                    <h3>Personal Portfolio Website</h3>
 
-            </article>
+                    <p>
+                        A multi-page personal portfolio website built using
+                        semantic HTML5 and CSS with a focus on accessibility,
+                        SEO and keyboard navigation.
+                    </p>
+
+                </article>
+
+            </div>
 
         </section>
 
@@ -107,9 +123,13 @@
 
     <footer>
 
-        <p>
-            &copy; 2026 Priyanka Bhalsing. All rights reserved.
-        </p>
+        <div class="container">
+
+            <p>
+                &copy; 2026 Priyanka Bhalsing. All rights reserved.
+            </p>
+
+        </div>
 
     </footer>
 
