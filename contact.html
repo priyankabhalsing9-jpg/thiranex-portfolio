@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="Contact Priyanka Bhalsing for questions, opportunities and collaboration.">
+          content="Contact Priyanka Bhalsing for software development and web development opportunities.">
 
     <meta name="author" content="Priyanka Bhalsing">
 
@@ -27,21 +26,32 @@
 
     <header>
 
-        <nav aria-label="Main navigation">
+        <nav class="navbar container" aria-label="Main navigation">
 
             <a href="index.html" aria-label="Go to Home page">
                 Priyanka Bhalsing
             </a>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+
                 <li>
                     <a href="contact.html" aria-current="page">
                         Contact
                     </a>
                 </li>
+
             </ul>
 
         </nav>
@@ -50,70 +60,52 @@
 
     <main id="main-content">
 
-        <section aria-labelledby="contact-heading">
+        <section class="container" aria-labelledby="contact-heading">
 
             <h1 id="contact-heading">Contact Me</h1>
 
             <p>
-                If you would like to contact me, please fill out the
-                form below.
+                If you would like to get in touch with me,
+                please fill out the form below.
             </p>
 
         </section>
 
-        <section aria-labelledby="form-heading">
+        <section class="container" aria-labelledby="form-heading">
 
-            <h2 id="form-heading">Send a Message</h2>
+            <h2 id="form-heading">Contact Form</h2>
 
-            <form action="#" method="post">
+            <form id="contact-form">
 
                 <div>
-                    <label for="name">Full Name</label>
-
+                    <label for="name">Name</label>
                     <input
                         type="text"
                         id="name"
                         name="name"
-                        autocomplete="name"
                         required
-                        aria-required="true"
+                        autocomplete="name"
                     >
                 </div>
 
                 <div>
-                    <label for="email">Email Address</label>
-
+                    <label for="email">Email</label>
                     <input
                         type="email"
                         id="email"
                         name="email"
+                        required
                         autocomplete="email"
-                        required
-                        aria-required="true"
-                    >
-                </div>
-
-                <div>
-                    <label for="subject">Subject</label>
-
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        required
-                        aria-required="true"
                     >
                 </div>
 
                 <div>
                     <label for="message">Message</label>
-
                     <textarea
                         id="message"
                         name="message"
                         rows="6"
                         required
-                        aria-required="true"
                     ></textarea>
                 </div>
 
@@ -129,11 +121,17 @@
 
     <footer>
 
-        <p>
-            &copy; 2026 Priyanka Bhalsing. All rights reserved.
-        </p>
+        <div class="container">
+
+            <p>
+                &copy; 2026 Priyanka Bhalsing. All rights reserved.
+            </p>
+
+        </div>
 
     </footer>
+<script src="js/script.js"></script>
+
 
 </body>
 </html>
